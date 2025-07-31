@@ -4,7 +4,7 @@ import authorize from "../middlewares/authorize.js";
 import upload from "../middlewares/multer.js";
 const router =e.Router();
 
-router.post('/', authorize(["Admin","user"]),upload.single('image'), createPost);
+router.post('/', authorize(["Admin","User"]),upload.single('image'), createPost);
 
 router.get('/', getAllpost);
 
